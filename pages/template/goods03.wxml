@@ -1,0 +1,17 @@
+<template name="goods03">
+  <view class="box">
+    <view class='img'>
+      <image src="{{tab_image_url}}"></image>
+      <view style='display:{{store_amount==0?"block" : "none"}}'>补货中</view>
+    </view>
+    <view class="name">
+      <view>【{{unit}}】</view>
+      <view>{{product_name}}</view>
+    </view>
+    <view class="wrap">
+      <view>￥{{sale_price}}元/{{unit}}</view>
+      <view style='display:{{support_virtual==1?"none" : "block"}}'>积分</view>
+      <view class='iconfont iconicon2'></view>
+    </view>
+  </view>
+</template>

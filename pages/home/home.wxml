@@ -1,0 +1,39 @@
+<!--pages/home/home.wxml-->
+<import src="/pages/template/goods02.wxml"/>
+<!-- 轮播图 -->
+<view>
+  <swiper indicator-dots circular autoplay indicator-color="rgba(0, 0, 0, .3)" indicator-active-color="rgba(235, 50, 80, .8)">
+    <swiper-item wx:for="{{img_list}}" wx:key="{{item.id}}">
+      <image src='{{item.tab_image_url}}'></image>
+    </swiper-item>
+  </swiper>
+  <!-- 搜索 -->
+  <navigator class='searchbox' url='/pages/soso/soso'>
+    <view id='searchWrap' class="clearfix {{setSearch ? 'setSearch' : ''}}">
+      <text decode="true" class='iconfont iconsousuo'>&nbsp;&nbsp;搜索</text>      
+    </view>
+  </navigator>
+  <!-- 导航 -->
+  <view class="wrap">
+    <view catchtap='toSearch' data-item_data='{{item}}' class="nav_item" wx:for="{{nav_list}}" wx:key="{{index}}">
+      <image src="{{item.bar_image_url}}"></image>
+      <view>{{item.bar_name}}</view>
+    </view>
+  </view>
+  <!-- 商品列表 -->
+  <view class='goods_box'>
+    <view 
+    class='goods_item goods_item-{{index}}' 
+    catchtap="toDetail" 
+    data-goods_id="{{item.id}}" 
+    wx:for="{{goods_list}}" 
+    wx:key="index" >
+      <template is="goods02" data="{{...item}}" />
+    </view>
+  </view>
+  <!-- 回到顶部 -->
+  <text class='.goTop' catchtap='goTop' wx:if="{{gotop}}">
+    <text>回到</text>
+    <text>顶部</text>
+  </text>
+</view>

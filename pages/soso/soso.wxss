@@ -1,0 +1,70 @@
+/* pages/soso/soso.wxss */
+.wrap{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 20rpx 0;
+  box-shadow: 0 0 30rpx #aaaaaa;
+  background-color: white;
+}
+.search_top{
+  height: 4rem;
+}
+.iconfont{
+  line-height: 2rem;
+  padding: 0 0.8rem;
+  font-size: 1.2rem;
+}
+.inp{
+  height: 2rem;
+  background-color: #eee;
+  flex-grow: 1;
+  border-radius: 10rpx;
+  padding-left: 10rpx 
+}
+.btn{
+  height: 2rem;
+  background-color: #54637d;
+  line-height: 2rem;
+  color: white;
+  padding: 0 20rpx;
+  margin: 0 20rpx;
+  border-radius: 10rpx;
+}
+
+/* 热门搜索词 */
+.hot_box{
+  padding: 0 30rpx 15rpx;
+}
+.hot_wrap text{
+  float: left;
+  width: 30%;
+  border: 1rpx solid #EEE;
+  border-radius: 10rpx;
+  line-height: 2rem;
+  text-align: center;
+  margin: 10rpx 11rpx;
+  background-color: white;
+  font-size: 0.9rem;
+}
+/* 最近、热门标题 */
+.recent_search{
+  text-align: center;
+  line-height: 2rem;
+}
+.hot_search{
+  text-align: center;
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+.iconshanchu{
+  font-size: 0.9rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 1rem;
+  line-height: 2.5rem;
+  border-radius: 3rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}

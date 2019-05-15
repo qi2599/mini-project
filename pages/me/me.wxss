@@ -1,0 +1,15 @@
+/* pages/me/me.wxss */
+image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100rpx;
+  margin: 50rpx; 
+  float: left;
+}
+.user{
+  background-color: #f9e2c3;
+  line-height: 150rpx;
+}
+button{
+  width: 80%;
+}

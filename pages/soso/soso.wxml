@@ -1,0 +1,40 @@
+<!-- 搜索 -->
+<view class="wrap">
+  <text class='iconfont iconsousuo'></text>
+  <!-- bindconfirm 点击完成按钮时触发 -->
+  <!-- bindinput 键盘输入时触发 -->
+  <!-- bindblur 失去焦点时触发 -->
+  <input type="text" 
+    class='inp' 
+    value="{{val}}"
+    bindconfirm="inp_go" 
+    bindinput="inp_set" 
+    bindblur="addStorage" 
+    placeholder="饮料/酒/零食等" focus="true"/>
+  <button class="btn" catchtap='toSearch'>搜索</button>
+</view>
+<view class='search_top'></view>
+<!-- 最近搜索 -->
+<view class='recent_search'>最近搜索</view>
+<view class='hot_box clearfix'>
+  <view class="hot_wrap">
+    <text catchtap='set_value' 
+    data-keyword='{{item}}' 
+    wx:for="{{recent_list}}" 
+    wx:key="{{index}}">{{item}}</text>
+  </view>
+</view>
+<view catchtap='clearStorage' 
+  class='iconfont iconshanchu' 
+  style='display: {{recent_list.length>2 ? "block" : "none"}}'>
+</view>
+<!-- 热门搜索 -->
+<view class='hot_search'>热门搜索</view>
+<view class='hot_box clearfix'>
+  <view class="hot_wrap">
+    <text catchtap='set_value' 
+    data-keyword='{{item.desc}}' 
+    wx:for="{{hot_list}}" 
+    wx:key="{{index}}">{{item.desc}}</text>
+  </view>
+</view>

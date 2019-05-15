@@ -1,0 +1,81 @@
+/* pages/detail/detail.wxss */
+@import '/pages/template/detail_bar.wxss';
+page{
+  background-color: white;
+  font-size: 0.8rem;
+}
+swiper{
+  width: 100%;
+  height: 500rpx;
+  background-color: white;
+  padding: 50rpx 0;
+}
+
+swiper-item image{
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: 500rpx;
+
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline ;
+}
+.header :first-child{
+  padding-left: 0.5rem;
+  color: #ea3351;
+  font-size: 1.2rem;
+  line-height: 3rem;
+}
+.header .buy_lower{
+  font-size: 0.7rem;
+  color: #919191;
+}
+.header :last-child{
+  font-size: 0.7rem;
+  color: #919191;
+  margin-right: 20rpx;
+}
+.name{
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  line-height: 2rem;
+  width: 96%;
+  background-image: linear-gradient(to left, #ff0397 0%, #ea3351 100%);
+  border-radius: 15rpx 15rpx 0 0;
+  margin: 0 auto;
+}
+.info_box{
+  border-radius: 0 0 15rpx 15rpx;
+  overflow: hidden;
+  width: 96%;
+  margin: 0 auto;
+}
+.row{
+  background-color: #EEEEEE;
+  display: flex;
+}
+.row> view{
+  flex-basis: 0;
+  line-height: 1.5rem;
+}
+.row :nth-child(odd){
+  flex-grow: 1;
+  text-align: right;
+  color: #6e6e6e;
+}
+.row :last-child{
+  flex-grow: 1.8;
+  text-align: left;
+}
+.row :nth-child(2){
+  flex-grow: 1;
+  text-align: left;
+}
+.buy_lower{
+  line-height: 2rem;
+  text-align: center;
+}

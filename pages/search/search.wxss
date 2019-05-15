@@ -1,0 +1,36 @@
+/* pages/search/search.wxss */
+@import '/pages/template/goods03.wxss';
+.search_wrap{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 20rpx 0;
+  box-shadow: 0 0 30rpx #aaaaaa;
+  background-color: white;
+}
+.search_top{
+  height: 3.3rem;
+}
+.search_wrap .iconfont{
+  line-height: 2rem;
+  padding: 0 0.8rem;
+  font-size: 1.2rem;
+}
+.inp{
+  height: 2rem;
+  background-color: #eee;
+  flex-grow: 1;
+  border-radius: 10rpx;
+  padding-left: 10rpx 
+}
+.btn{
+  height: 2rem;
+  background-color: #54637d;
+  line-height: 2rem;
+  color: white;
+  padding: 0 20rpx;
+  margin: 0 20rpx;
+  border-radius: 10rpx;
+}

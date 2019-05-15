@@ -1,0 +1,13 @@
+<!--pages/me/me.wxml-->
+<view class='user'>
+  <image src='{{userInfo.avatarUrl}}'></image>
+  <text>{{userInfo.nickName}}</text>
+</view>
+<button 
+  bindgetuserinfo='handleGetUserInfo' 
+  style='display:{{isShow?"block" : "none"}}' 
+  open-type='getUserInfo' 
+  size="{{defaultSize}}">
+  
+  授权登录
+</button>

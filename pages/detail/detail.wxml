@@ -1,0 +1,37 @@
+<!--pages/detail/detail.wxml-->
+<import src="/pages/template/detail_bar.wxml"/>
+<swiper>
+  <swiper-item>
+    <image src='{{goods_data.mains[0].tab_image_url}}'></image>
+  </swiper-item>
+</swiper>
+<view class="header">
+  <view>￥{{goods_data.sale_price}}元/{{goods_data.unit}}</view>
+  <view class='buy_lower'>
+    {{goods_data.buy_lower_limit}}{{goods_data.unit}}起购，限购{{goods_data.buy_upper_limit}}{{goods_data.unit}}
+  </view>
+  <view>月销量：{{goods_data.sales_volume ? goods_data.sales_volume : 0}}</view>
+</view>
+<view class="name">{{goods_data.product_name}}</view>
+<view class="info_box">
+  <view class='row'>
+    <view>商品ID：</view>
+    <view>{{goods_data.id}}</view>
+    <view>箱格：</view>
+    <view>{{goods_data.specifications}}</view>
+  </view>
+  <view class="row">
+    <view>保质期：</view>
+    <view>{{goods_data.quality_time}}</view>
+    <view>生产日期：</view>
+    <view>{{goods_data.product_time}}</view>
+  </view>
+  <view class="row">
+    <view>零售价：</view>
+    <view>{{goods_data.retail_price}}</view>
+    <view>商品条码：</view>
+    <view>{{goods_data.bar_code}}</view>
+  </view>
+</view>
+
+<template is="detail_bar"></template>

@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/soso/soso",
+    "pages/sift/sift",
+    "pages/search/search",
+    "pages/detail/detail",
+    "pages/me/me",
+    "pages/cart/cart",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "双华商城",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f2f2f2"
+  },
+  "tabBar": {
+    "selectedColor": "#54637d",
+    "color": "#54637d",
+    "backgroundColor": "#F7F7F7",
+    "borderStyle": "white",
+    "list": [
+      {
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "icons/home.png",
+      "selectedIconPath": "icons/home_active.png"
+      },
+      {
+        "pagePath": "pages/sift/sift",
+        "text": "分类",
+        "iconPath": "icons/sift.png",
+        "selectedIconPath": "icons/sift_active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "icons/car.png",
+        "selectedIconPath": "icons/car_active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "个人中心",
+        "iconPath": "icons/me.png",
+        "selectedIconPath": "icons/me_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

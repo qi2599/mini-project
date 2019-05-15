@@ -1,0 +1,22 @@
+<!--pages/search/search.wxml-->
+<import src="/pages/template/goods03.wxml"/>
+<!-- 搜索 -->
+<view class="search_wrap">
+  <text class='iconfont iconsousuo'></text>
+  <!-- bindconfirm 点击完成按钮时触发 -->
+  <!-- bindinput 键盘输入时触发 -->
+  <!-- bindblur 失去焦点时触发 -->
+  <input type="text" 
+    class='inp' 
+    value="{{val}}"
+    bindconfirm="inp_go" 
+    bindinput="inp_set" 
+    bindblur="addStorage" 
+    placeholder="饮料/酒/零食等"/>
+  <button class="btn" catchtap='toSearch'>搜索</button>
+</view>
+<view class='search_top'></view>
+<!-- 商品列表 -->
+<view catchtap="toDetail" data-goods_id="{{item.id}}" wx:for="{{goods_list}}" wx:key="{{index}}">
+  <template is="goods03" data="{{...item}}" />
+</view>

@@ -1,0 +1,63 @@
+.box{
+  color: #54637d;
+  height: 240rpx;
+  padding: 0 30rpx;
+  margin: 10rpx;
+  background-color: white;
+  box-shadow: 0px 0px 30rpx #ebebeb;
+  border-radius: 10rpx;
+}
+.box image{
+  float: left;
+  width: 240rpx;
+  height: 240rpx;
+}
+.img{
+  position: relative;
+}
+.img>view{
+  position: absolute;
+  top: 160rpx;
+  width: 240rpx;
+  color: white;
+  text-align: center;
+  background-color: #6d6d6d;
+  opacity: 0.7;
+  line-height: 2rem;
+}
+.name{
+  padding-top: 50rpx;
+  display: flex;
+}
+.name :first-child{
+  color: tan;
+}
+.name :last-child{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wrap{
+  height: 100rpx;
+  padding: 0 8rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.wrap :first-child{
+  color: #EA3351;
+  font-size: 1rem;
+}
+.wrap :nth-child(2){
+  font-size: 0.7rem;
+  color: white;
+  padding: 0 10rpx;
+  margin-bottom: 10rpx;
+  background-color: #EA3351;
+}
+.wrap :nth-child(3){
+  font-size: 2rem;
+}
+.wrap :nth-child(3):active{
+  color: #EA3351;
+}

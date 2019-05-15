@@ -1,0 +1,9 @@
+<template name="detail_bar">
+  <view class="wrap">
+    <view class="iconfont iconkefu"><view>客服</view></view>
+    <view class="iconfont iconshoucang"><view>收藏</view></view>
+    <view class="iconfont icongouwuche-xuanzhong"><view>购物车</view></view>
+    <view class="iconfont iconarrow-left" catchtap='go_back'><view>返回</view></view>
+    <view class="add_cart">加入购物车</view>
+  </view>
+</template>

@@ -1,0 +1,15 @@
+<template name="goods01">
+  <view class='goods clearfix'>
+    <view class='img_box'>
+      <image class='img' src='{{tab_image_url}}'></image>
+      <view style='display:{{store_amount==0 ? "block" : "none"}}'>补货中</view>
+    </view>
+    <text class='name'>{{product_name}}</text>
+    <text class='speci'>规格:{{specifications}}</text>
+    <view class="iconfont iconicon2"></view>
+    <view class='price_wrap'>
+      <text class='price'>￥{{sale_price}}/{{unit}}</text>
+      <view style='display:{{support_virtual==1?"none" : "block"}}'>积分</view>
+    </view>
+  </view>
+</template>

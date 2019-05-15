@@ -1,0 +1,30 @@
+.wrap{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 30rpx #ebebeb;
+}
+.iconfont{
+  color: #54637d;
+  text-align: center;
+  padding: 0.2rem 0.8rem 1rem;
+  font-size: 1rem;
+}
+.iconfont:active{
+ background-color: #ea3351;
+}
+.iconfont > view{
+  font-size: 0.7rem;
+}
+.wrap .add_cart{
+  flex-grow: 1;
+  background-image: linear-gradient(to left, #ff0397 0%, #ea3351 100%);
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 0.2rem;
+}
