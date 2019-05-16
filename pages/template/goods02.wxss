@@ -29,21 +29,21 @@
 
 .goods .iconfont{
   float: right;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 2rem;
   color: #54637d;
   margin-right: 10rpx;
   padding-bottom: 10rpx;
 }
 .goods .iconfont:active{
-  color: #ea3351;
+  color: #fa5151;
 }
 text{
   display: block;
 }
 .name_wrap view:first-child{
   color: white;
-  background-color: #ea3351;
+  background-color: #fa5151;
   float: left;
   font-size: 0.6rem;
   margin-top: 0.65rem;
@@ -60,19 +60,23 @@ text{
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
-
-.footer view{
-  font-size: 0.7rem;
-  background-color: #ea3351;
-  color: white;
-  margin-left: 10rpx;
-  line-height: 1rem;
+.line{
+  height: 2rpx;
+  background-color: #eee;
 }
-.price{
-  color: #ea3351;
-  font-size: 1rem;
+.wap{
+  color: #fa5151;
+  font-size: 0.9rem;
   line-height: 2rem;
-  border-top: 2rpx solid #eee;
+  padding-top: 0.2rem;
+  padding-right: 0.5rem;
+  float: left;
+}
+.sale{
+  color: #6d6d6d;
+  font-size: 0.7rem;
+  line-height: 2rem;
+  text-decoration-line: line-through;
   padding-top: 0.2rem;
 }
 .specs{

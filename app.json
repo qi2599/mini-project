@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/soso/soso",
     "pages/sift/sift",
+    "pages/soso/soso",
     "pages/search/search",
     "pages/detail/detail",
     "pages/me/me",
@@ -16,7 +16,7 @@
     "backgroundColor": "#f2f2f2"
   },
   "tabBar": {
-    "selectedColor": "#54637d",
+    "selectedColor": "#00a73c",
     "color": "#54637d",
     "backgroundColor": "#F7F7F7",
     "borderStyle": "white",

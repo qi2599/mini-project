@@ -45,16 +45,30 @@ page{
   text-align: center;
   position: fixed;
   background-color: white;
-  height: 90%;
+  height: 100%;
   padding-bottom: 2.7rem;
 }
-.class_box text{
+.item{
   line-height: 3rem;
   font-size: 0.9rem;
-  border-bottom: 2rpx #eeeeee solid;
+}
+.line{
+  height: 2rpx;
+  background-color: #eee;
+  margin: -1rpx 10rpx;
 }
 .class_box .active{
   background-color: #eeeeee;
+  border-left: 10rpx solid #00a73c; 
+  color: #00a73c;
+}
+.class_box .class2_active{
+  color: #00a73c;
+}
+.class2{
+  background-color: #f9f9f9;
+  line-height: 3rem;
+  font-size: 0.9rem;
   border-left: 10rpx solid #54637d; 
 }
 

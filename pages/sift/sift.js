@@ -8,8 +8,8 @@ Page({
   data: {
     all_list:[],
     class_list:[],
-    class_list2:[],
     classId:'',
+    parent_id:'',
     pageNumber:1,
     val: ''
   },
@@ -26,7 +26,7 @@ Page({
       url: url + "prod/queryClass",
       success: (data) => {
         this.setData({
-          class_list: [{ name: "所有商品", id: "" }, ...data.data.result]
+          class_list: [{ name: "所有商品", id: ""}, ...data.data.result, { name: "——", id: "666" }]
         })
       }
     })
@@ -59,11 +59,17 @@ Page({
       url: '/pages/detail/detail?id=' + goods_id
     })
   },
+  // 获取二级菜单
   getClass2(event){
     wx.showLoading({ title: '加载中' })
     this.data.pageNumber = 1
     this.setData({
-      classId: event.currentTarget.dataset.classid
+      classId: event.currentTarget.dataset.classid,
+    })
+    let class_list = this.data.class_list
+    // 清除二级菜单
+    class_list.forEach(item => {
+      item.class_list2 = []
     })
     wx.request({
       method,
@@ -76,11 +82,53 @@ Page({
       },
       url: url + "prod/queryClass",
       success: (data) => {
+        // 二级菜单列表添加到对应的一级菜单中
+        let res = data.data.result
+        class_list.some(item =>{
+          if (!res[0]){
+            res = [{ parent_id: this.data.classId}]
+          }
+          if (item.id == res[0].parent_id){
+            item.class_list2 = res
+            return true
+          }
+        })
+        if (res[0].parent_id === "0") {
+          res[0].parent_id = ''
+        }
         this.setData({
-          class_list2: data.data.result
+          class_list,
+          parent_id: res[0].parent_id
         })
         wx.hideLoading()
       } 
+    })
+    wx.request({
+      method,
+      header,
+      fail,
+      data: {
+        pageNumber: this.data.pageNumber,
+        pageSize: 20,
+        classId: event.currentTarget.dataset.classid
+      },
+      url: url + "prod/query",
+      success: (data) => {
+        this.setData({
+          all_list: data.data.result
+        })
+        wx.pageScrollTo({
+          scrollTop: 0,
+          duration: 0
+        })
+        wx.hideLoading()
+      }
+    })
+  },
+  // 设置classId
+  setClassId(event){
+    this.setData({
+      classId: event.currentTarget.dataset.classid
     })
     wx.request({
       method,

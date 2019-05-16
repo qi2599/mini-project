@@ -2,7 +2,7 @@
 <import src="/pages/template/goods02.wxml"/>
 <!-- 轮播图 -->
 <view>
-  <swiper indicator-dots circular autoplay indicator-color="rgba(0, 0, 0, .3)" indicator-active-color="rgba(235, 50, 80, .8)">
+  <swiper indicator-dots circular autoplay indicator-color="rgba(0, 0, 0, .3)" indicator-active-color="rgba(0, 167, 60, .8)">
     <swiper-item wx:for="{{img_list}}" wx:key="{{item.id}}">
       <image src='{{item.tab_image_url}}'></image>
     </swiper-item>

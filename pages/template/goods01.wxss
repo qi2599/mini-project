@@ -36,7 +36,7 @@
   margin-top: -0.2rem;
 }
 .goods .iconfont:active{
-  color: #ea3351;
+  color: #fa5151;
 }
 text{
   display: block;
@@ -59,14 +59,14 @@ text{
 }
 .price_wrap view{
   font-size: 0.6rem;
-  background-color:  #ea3351;
+  background-color:  #fa5151;
   color: white;
   margin-left: 0.4rem;
   padding: 0 0.2rem;
   border-radius: 5rpx;
 }
 .price{
-  color: red;
+  color: #fa5151;
   font-size: 0.8rem;
   line-height: 1.5rem;
 }

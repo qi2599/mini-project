@@ -8,7 +8,7 @@
     <text class='speci'>规格:{{specifications}}</text>
     <view class="iconfont iconicon2"></view>
     <view class='price_wrap'>
-      <text class='price'>￥{{sale_price}}/{{unit}}</text>
+      <text class='price'>￥{{wap_price}}/{{unit}}</text>
       <view style='display:{{support_virtual==1?"none" : "block"}}'>积分</view>
     </view>
   </view>

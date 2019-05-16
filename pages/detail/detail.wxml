@@ -6,7 +6,7 @@
   </swiper-item>
 </swiper>
 <view class="header">
-  <view>￥{{goods_data.sale_price}}元/{{goods_data.unit}}</view>
+  <view>￥{{goods_data.wap_price}}元/{{goods_data.unit}}</view>
   <view class='buy_lower'>
     {{goods_data.buy_lower_limit}}{{goods_data.unit}}起购，限购{{goods_data.buy_upper_limit}}{{goods_data.unit}}
   </view>

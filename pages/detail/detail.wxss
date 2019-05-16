@@ -25,7 +25,7 @@ swiper-item image{
 }
 .header :first-child{
   padding-left: 0.5rem;
-  color: #ea3351;
+  color: #fa5151;
   font-size: 1.2rem;
   line-height: 3rem;
 }
@@ -44,7 +44,7 @@ swiper-item image{
   text-align: center;
   line-height: 2rem;
   width: 96%;
-  background-image: linear-gradient(to left, #ff0397 0%, #ea3351 100%);
+  background-color: #54637d;
   border-radius: 15rpx 15rpx 0 0;
   margin: 0 auto;
 }

@@ -24,10 +24,19 @@
 <!-- 分类列表 -->
 <view>
   <scroll-view class='class_box' scroll-y>
-    <text class="{{classId == item.id ? 'active' : ''}}" 
-    catchtap='getClass2' 
-    data-classid='{{item.id}}' 
-    wx:for="{{class_list}}" 
-    wx:key="item.id">{{item.name}}</text>
+    <view wx:for-items="{{class_list}}" wx:key="item.id">
+      <view class="item {{parent_id == item.id ? ' active' : ''}}" 
+      catchtap='getClass2' 
+      data-classid='{{item.id}}'>
+      <view class='border'></view>{{item.name}}
+    </view>
+    <view class='line'></view>
+    <view class="class2 {{classId == class2.id ? ' class2_active' : ''}}" 
+      catchtap='setClassId' 
+      data-classid='{{class2.id}}' 
+      wx:for-items="{{item.class_list2}}" 
+      wx:for-item="class2" 
+      wx:key="class2.id">{{class2.name}}</view>
+    </view>
   </scroll-view>
 </view>

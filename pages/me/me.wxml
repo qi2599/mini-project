@@ -4,6 +4,7 @@
   <text>{{userInfo.nickName}}</text>
 </view>
 <button 
+  type='primary'
   bindgetuserinfo='handleGetUserInfo' 
   style='display:{{isShow?"block" : "none"}}' 
   open-type='getUserInfo' 
