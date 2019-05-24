@@ -57,7 +57,7 @@ page{
   background-color: #eee;
   margin: -1rpx 10rpx;
 }
-.class_box .active{
+.class_box view.active{
   background-color: #eeeeee;
   border-left: 10rpx solid #00a73c; 
   color: #00a73c;

@@ -1,0 +1,47 @@
+<template name="login">
+  <view class='login_wrap'>
+    <view>
+      <input type='text' bindinput='get_user_name' placeholder='手机号/用户名'/>
+      <text class='iconfont icongerenzhongxin-xuanzhong'></text>
+    </view>
+    <view>
+      <input type='password' bindinput='get_psd' bindconfirm='to_login' placeholder='登录密码' confirm-type='前往'/>
+      <text class='iconfont iconai-password'></text>
+    </view>
+  </view>
+  <button class='login_btn' type='primary' bindtap='to_login'>登录</button>
+  <navigator class='forget_psd'>忘记密码?</navigator>
+</template>
+<template name="register">
+  <view class='reg_wrap'>
+    <view class='reg_item'>
+      <input type='text' placeholder='请输入手机号码'/>
+      <text>手机号</text>
+    </view>
+    <view class='reg_item'>
+      <input type='text'placeholder='请输入商店名称'/>
+      <text>商店名称</text>
+    </view>
+    <view class='reg_item'>
+      <input type='text'placeholder='请输入您的姓名'/>
+      <text>客户名字</text>
+    </view>
+    <view class='reg_item'>
+      <input type='text'placeholder='请输入收货地址'/>
+      <text>收货地址</text>
+    </view>
+    <view class='reg_item'>
+      <input type='password'placeholder='6-20位数字+字母或符号'/>
+      <text>设置密码</text>
+    </view>
+    <view class='reg_item'>
+      <input type='password'placeholder='6-20位数字+字母或符号'/>
+      <text>确认密码</text>
+    </view>
+    <view class='reg_item'>
+      <input type='text'placeholder='请输入验证码'/>
+      <text>验证码</text>
+    </view>
+  </view>
+  <button class='reg_btn' type='primary'>提交</button>
+</template>

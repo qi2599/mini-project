@@ -27,8 +27,7 @@
     <view wx:for-items="{{class_list}}" wx:key="item.id">
       <view class="item {{parent_id == item.id ? ' active' : ''}}" 
       catchtap='getClass2' 
-      data-classid='{{item.id}}'>
-      <view class='border'></view>{{item.name}}
+      data-classid='{{item.id}}'>{{item.name}}
     </view>
     <view class='line'></view>
     <view class="class2 {{classId == class2.id ? ' class2_active' : ''}}" 

@@ -1,4 +1,5 @@
 /**app.wxss**/
+@import '/iconfont/iconfont.wxss';
 page{
   color: #54637d;
   background-color: rgb(242, 242, 242);
@@ -16,85 +17,4 @@ page{
   content: "";
   display: table;
   clear: both;
-}
-
-@font-face {
-  font-family: 'iconfont';  /* project id 1124787 */
-  src: url('//at.alicdn.com/t/font_1124787_s9pxwzn7sq.eot');
-  src: url('//at.alicdn.com/t/font_1124787_s9pxwzn7sq.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1124787_s9pxwzn7sq.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1124787_s9pxwzn7sq.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1124787_s9pxwzn7sq.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1124787_s9pxwzn7sq.svg#iconfont') format('svg');
-}
-
-.iconfont {
-  font-family: "iconfont" !important;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icongonggao:before {
-  content: "\e601";
-}
-
-.iconicon2:before {
-  content: "\e60d";
-}
-
-.iconarrow-left:before {
-  content: "\e60e";
-}
-
-.iconshoucang:before {
-  content: "\e612";
-}
-
-.iconkefu:before {
-  content: "\e60c";
-}
-
-.iconshanchu:before {
-  content: "\e62d";
-}
-
-.iconfenlei-weixuanzhong:before {
-  content: "\e602";
-}
-
-.iconfenlei-xuanzhong:before {
-  content: "\e603";
-}
-
-.icongerenzhongxin-weixuanzhong:before {
-  content: "\e604";
-}
-
-.icondianpu-weixuanzhong:before {
-  content: "\e605";
-}
-
-.icongerenzhongxin-xuanzhong:before {
-  content: "\e606";
-}
-
-.icongouwuche-xuanzhong:before {
-  content: "\e607";
-}
-
-.icongouwuche-weixuanzhong:before {
-  content: "\e608";
-}
-
-.icondianpu-xuanzhong:before {
-  content: "\e609";
-}
-
-.iconsousuo:before {
-  content: "\e60a";
-}
-
-.iconjiagouwuche:before {
-  content: "\e60b";
 }

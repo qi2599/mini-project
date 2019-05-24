@@ -59,9 +59,8 @@ swiper image{
 .setSearch{
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
-  opacity: 0.9;
   box-shadow: 0 0 30rpx #ebebeb;
 }
 #searchWrap text{

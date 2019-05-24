@@ -65,6 +65,6 @@
   width: 1rem;
   line-height: 2.5rem;
   border-radius: 3rem;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
+  background-color: white;
+  color: rgb(126, 126, 126);
 }

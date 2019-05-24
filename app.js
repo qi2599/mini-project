@@ -35,6 +35,7 @@ App({
   },
   globalData: {
     userInfo: null,
+    sh_user: null,
     queryData: {
       method: "POST",
       header: { 'content-type': 'application/x-www-form-urlencoded' },
@@ -48,5 +49,8 @@ App({
         })
       }
     }
+  },
+  set_user(res){
+    this.globalData.sh_user = res
   }
 })

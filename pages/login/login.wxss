@@ -1,0 +1,63 @@
+/* pages/login/login.wxss */
+@import '/pages/template/login.wxss';
+.logo{
+  text-align: center;
+}
+.bg_img{
+  width: 100%;
+  height: 470rpx;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+.img{
+  height: 469rpx;
+}
+.logo{
+  background: rgba(255, 255, 255, 0.3);
+  width: 280rpx;
+  border-radius: 10rpx;
+  position: absolute;
+  top: 230rpx;
+  left: 225rpx;
+}
+.logo_img{
+  width: 20%;
+  height: 150rpx;
+  position: absolute;
+  left: 40%;
+  top: 60rpx;
+}
+.logo text:first-child{
+  display: block;
+  font-size: 1.2rem;
+  color: white
+}
+.logo text:last-child{
+  display: block;
+  font-size: 0.8rem; 
+  line-height: 1.5rem;
+  color:white;
+}
+
+.log_reg{
+  width: 80%;
+  background: white;
+  margin-left: 10%;
+  border-radius: 2rem;
+  position: relative;
+  top: -1.2rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 60rpx #c9c9c9;
+}
+.log_reg text{
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  line-height: 2.4rem;
+  color: #54637d;
+}
+.log_reg .active{
+  background-color: #54637d;
+  color: white;
+}

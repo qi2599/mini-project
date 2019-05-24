@@ -1,0 +1,14 @@
+<!--pages/login/login.wxml-->
+<import src="/pages/template/login.wxml"/>
+<image class='bg_img' src='/images/login.jpg'></image>
+<view class='img'></view>
+<image class='logo_img' src='/images/logo.png'></image>
+<view class='logo'>
+  <text>双 华 商 城</text>
+  <text>批发 | 代理 | 配送</text>
+</view>
+<view class='log_reg'>
+  <text class='{{isTem ? "active":" "}}' bindtap='to_log'>登录</text>
+  <text class='{{isTem ? " ":"active"}}' bindtap='to_reg'>注册</text>
+</view>
+<template is="{{isTem ? 'login':'register'}}"/>

@@ -1,0 +1,4 @@
+<!--pages/vip/vip.wxml-->
+<text class='{{is_show ? "show" : "no_show"}}'>{{userInfo.cust_name}}</text>
+<navigator class='{{is_show ? "show" : "no_show"}}' url='/pages/login/login'>切换账号</navigator>
+<navigator class='{{is_show ? "no_show" : "show"}}' url='/pages/login/login'>前往登录</navigator>

@@ -1,0 +1,11 @@
+/* pages/vip/vip.wxss */
+.show{
+  display: block;
+}
+.no_show{
+  display: none;
+}
+navigator,text{
+  line-height: 100rpx;
+  text-align: center;
+}

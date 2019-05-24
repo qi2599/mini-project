@@ -1,8 +1,10 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/sift/sift",
     "pages/soso/soso",
+    "pages/login/login",
+    "pages/vip/vip",
+    "pages/sift/sift",
     "pages/search/search",
     "pages/detail/detail",
     "pages/me/me",
@@ -40,7 +42,7 @@
         "selectedIconPath": "icons/car_active.png"
       },
       {
-        "pagePath": "pages/me/me",
+        "pagePath": "pages/vip/vip",
         "text": "个人中心",
         "iconPath": "icons/me.png",
         "selectedIconPath": "icons/me_active.png"

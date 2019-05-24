@@ -1,0 +1,55 @@
+.login_wrap{
+  background: white;
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
+  overflow: hidden;
+  margin: 30rpx;
+}
+.login_wrap .iconfont{
+  line-height: 3rem;
+  padding-left: 0.8rem;
+}
+.login_wrap input{
+  background: white;
+  width: 85%;
+  float: right;
+  height: 3rem;
+  font-size: 0.9rem;
+}
+.login_wrap view:first-child{
+  border-bottom: 1px solid #eee;
+}
+.forget_psd{
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgb(92, 92, 92);
+}
+.login_btn{
+  margin: 30rpx;
+}
+
+.reg_wrap{
+  background: white;
+  font-size: 0.9rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  margin: 30rpx;
+  border-radius: 0.5rem;
+}
+.reg_wrap input{
+  width: 70%;
+  background: white;
+  float: right;
+  padding: 0 10rpx;
+  font-size: 0.9rem;
+  height: 3rem;
+}
+.reg_item{
+  border-bottom: 1px solid #eee;
+}
+.reg_item:last-child{
+  border: none;
+}
+.reg_btn{
+  margin: 30rpx 30rpx 200rpx;
+}

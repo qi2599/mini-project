@@ -127,7 +127,7 @@ Page({
     goods_list.forEach((item, i) => {
       wx.createIntersectionObserver().relativeToViewport({ bottom: 20 }).observe('.goods_item-' + i, (ret) => {
         if (ret.intersectionRatio > 0) {
-          goods_list[i].img_show = true
+          item.img_show = true
         }
         this.setData({ goods_list})
       })
