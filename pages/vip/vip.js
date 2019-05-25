@@ -13,6 +13,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.navigateTo({ url: '/pages/login/login' }) 
   },
 
   /**
@@ -31,10 +32,8 @@ Page({
     })
     if (this.data.userInfo) {
       this.setData({ is_show: true })
-      console.log('true')
     } else {
       this.setData({ is_show: false })
-      console.log('false')
     }
   },
 

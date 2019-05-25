@@ -15,7 +15,7 @@
 <template name="register">
   <view class='reg_wrap'>
     <view class='reg_item'>
-      <input type='text' placeholder='请输入手机号码'/>
+      <input type='number' placeholder='请输入手机号码'/>
       <text>手机号</text>
     </view>
     <view class='reg_item'>
