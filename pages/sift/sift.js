@@ -1,5 +1,6 @@
 // pages/index3/index3.js
-const { method, header, url, fail } = getApp().globalData.queryData
+const { method, url, fail } = getApp().globalData.queryData
+const header = wx.getStorageSync("header") 
 Page({
 
   /**
@@ -125,8 +126,9 @@ Page({
       }
     })
   },
-  // 设置classId
+  // 获取二级分类商品
   setClassId(event){
+    wx.showLoading({ title: '加载中' })
     this.setData({
       classId: event.currentTarget.dataset.classid
     })

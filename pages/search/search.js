@@ -1,5 +1,6 @@
 // pages/search/search.js
-const { method, header, url, fail } = getApp().globalData.queryData
+const { method, url, fail } = getApp().globalData.queryData
+const header = wx.getStorageSync("header") 
 Page({
 
   /**

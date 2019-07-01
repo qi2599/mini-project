@@ -1,5 +1,6 @@
 // pages/home/home.js
-const { method, header, url, fail } = getApp().globalData.queryData
+const { method, url, fail } = getApp().globalData.queryData
+const header = wx.getStorageSync("header") 
 Page({
 
   /**
@@ -18,7 +19,7 @@ Page({
    */
   onLoad: function (options) {
     // 获取轮播图片
-    wx.request({
+      wx.request({
       method,
       header,
       fail,

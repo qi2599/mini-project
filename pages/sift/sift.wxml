@@ -28,7 +28,7 @@
       <view class="item {{parent_id == item.id ? ' active' : ''}}" 
       catchtap='getClass2' 
       data-classid='{{item.id}}'>{{item.name}}
-    </view>
+      </view>
     <view class='line'></view>
     <view class="class2 {{classId == class2.id ? ' class2_active' : ''}}" 
       catchtap='setClassId' 

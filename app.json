@@ -1,10 +1,10 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/soso/soso",
-    "pages/login/login",
-    "pages/vip/vip",
     "pages/sift/sift",
+    "pages/login/login",
+    "pages/soso/soso",
+    "pages/vip/vip",
     "pages/search/search",
     "pages/detail/detail",
     "pages/me/me",

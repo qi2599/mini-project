@@ -11,4 +11,4 @@
   <text class='{{isTem ? "active":" "}}' bindtap='to_log'>登录</text>
   <text class='{{isTem ? " ":"active"}}' bindtap='to_reg'>注册</text>
 </view>
-<template is="{{isTem ? 'login':'register'}}"/>
+<template is="{{isTem ? 'login':'register'}}" data="{{img_code}}"/>

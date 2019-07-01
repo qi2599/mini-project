@@ -27,15 +27,15 @@ App({
         }
       }
     })
+    this.get_cookie()
   },
   globalData: {
     userInfo: null,
     sh_user: null,
     queryData: {
-      method: "POST",
-      header: { 'content-type': 'application/x-www-form-urlencoded' },
-      url: "http://www.gkshwap.com/wapback/app/",
-      fail(){
+      method:"POST",
+      url: "http://139.159.204.137/wapback/app/",
+      fail() {
         wx.hideLoading()
         wx.showToast({
           title: '连接失败',
@@ -47,5 +47,22 @@ App({
   },
   set_user(res){
     this.globalData.sh_user = res
+  },
+  
+  get_cookie(){
+    // 获取cookie
+    let {method,header,url} = this.globalData.queryData
+    wx.request({
+      method,
+      header,
+      url: url + 'other/getHomeRunImgPicList',
+      success:(res)=>{
+        console.log(res)
+        let cookie=res.header['Set-Cookie']
+        cookie = cookie.replace('; Path=/wapback', '')
+        let header = { 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'cookie': cookie }
+        wx.setStorageSync('header', header)
+      }
+    })
   }
 })
